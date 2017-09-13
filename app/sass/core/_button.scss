@@ -1,0 +1,49 @@
+.button {
+	display: block;
+	width: 377px;
+	height: 66px;
+	border-radius: 10px;
+	border-style: solid;
+	border-width: 1px;
+	border-color: $color-black;
+	box-sizing: border-box;
+	font-size: 22px;
+	text-decoration: none;
+	text-transform: uppercase;
+	letter-spacing: 1.4px;
+	text-align: center;
+	background: none;
+	cursor: pointer;
+
+	&_theme {
+		&_red {
+			background: $color-red;
+			color: $color-white;
+			border-color: $color-red;
+
+			&:hover {
+				background: $effect-glass;
+				color: $color-black;
+			}
+		}
+
+		&_glass {
+			background: $effect-glass;
+			color: $color-grey;
+
+			&:hover {
+				background: $color-red;
+				color: $color-white;
+				border-color: $color-red;
+			}
+		}
+	}
+}
+
+@media screen and (max-width: 767px) {
+	.button {
+		width: 80%;
+		height: 50px;
+		font-size: 16px;
+	}
+}

@@ -1,0 +1,71 @@
+/*Main content*/
+
+.main {
+	background-image: url('../images/main-banner.jpg');
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-size: cover;
+	height: 547px;
+
+	&__inner {
+		width: $page-width;
+		padding-top: 45px;
+		margin: 0 auto;
+	}
+
+	&__title {
+		@include is-centred;
+		font-size: 56px;
+		letter-spacing: 3.4px;
+	}
+
+	&__subtitle {
+		@include is-centred;
+		margin-top: 18px;
+		margin-bottom: 70px;
+		font-size: 24px;
+	}
+
+	& .button {
+		@include is-centred;
+	}
+}
+
+@media screen and (max-width: 1024px){
+	.main {
+		height: 350px;
+
+		&__inner {
+			width: 90%;
+			padding: 3.5% 0;
+		}
+
+		&__title {
+			font-size: 42px;
+		}
+
+		&__subtitle {
+			font-size: 20px;
+		}
+	}
+}
+
+@media screen and (max-width: 767px){
+	.main {
+		height: 300px;
+
+		&__title {
+			font-size: 30px;
+		}
+
+		&__subtitle {
+			font-size: 16px;
+		}
+	}
+}
+
+@media (orientation: landscape) and (max-width: 768px) {
+	.main {
+		height:100vh;
+	}
+}

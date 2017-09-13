@@ -1,0 +1,6 @@
+.border {
+	&_rounded {
+		border-radius: 50%;
+		border: solid 3px $color-yellow;
+	}
+}

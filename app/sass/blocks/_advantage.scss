@@ -1,0 +1,63 @@
+.advantage {
+	@include pink;
+
+	&__inner {
+		display: flex;
+		justify-content: space-between;
+		flex-wrap: wrap;
+		width: 1150px;
+		margin: 0 auto;
+		padding: 60px 0 75px;
+	}
+
+	&__title {
+		width: 100%;
+		@include is-centred;
+		padding-bottom: 50px;
+	}
+
+	&__container {
+		width: 300px;
+	}
+
+	&__image img{
+		width: 100%;
+	}
+
+	&__subtitle {
+		@include is-centred;
+		font-size: 24px;
+		font-weight: 400;
+		padding: 20px 0 24px;
+	}
+
+	&__description {
+		@include is-centred;
+		margin-bottom: 70px;
+	}
+
+	& .button {
+		@include is-centred;
+	}
+}
+
+@media screen and (max-width: 1024px){
+	.advantage {
+		&__inner {
+			width: 90%;
+			justify-content: space-around	;
+		}
+
+		&__image {
+			margin: 0 auto;
+
+			& img {
+				width: 100%;
+			}
+		}
+
+		.button {
+			width: 80%;
+		}
+	}
+}

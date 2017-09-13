@@ -1,0 +1,21 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,600');
+
+@import url('https://fonts.googleapis.com/css?family=PT+Sans');
+
+@font-face {
+	font-family: pfagorasanspro-light; 
+	src: url('../../../fonts/pfagorasanspro-light.ttf'); 
+}
+
+$font-stack: 16px/1em 'Open Sans', Arial, sans-serif;
+
+* {
+	font: $font-stack;
+	font-weight: 300;
+	color: $color-black;
+}
+
+h2 {
+	font-size: 60px;
+	font-weight:300;
+}

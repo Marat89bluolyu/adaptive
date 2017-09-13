@@ -1,0 +1,116 @@
+.testimonials {
+	background-image: url('../images/banner 2.jpg');
+	background-repeat: no-repeat;
+	background-size: cover;
+
+	&__inner {
+		width: 1090px;
+		margin: 0 auto;
+		padding: 39px 0 54px;
+	}
+
+	&__table {
+		width: 540px;
+	}
+
+	&__title {
+		margin-bottom: 54px;
+	}
+
+	&__person {
+		display: flex;
+		width: 365px;
+		height: 160px;
+		flex-flow: column wrap;
+		margin-bottom: 27px;
+	}
+
+	&__photo {
+		display: flex;
+		align-items: center; 
+		justify-content: flex-start;
+		flex-basis: 100%;
+		margin-right: 15px;
+		order: 1;
+	}
+
+	&__name {
+		font-size: 30px;
+		font-weight: 400;
+		padding-bottom: 9px;
+		display: flex;
+		align-items: flex-end; 
+		justify-content: flex-start;
+		flex: 1 1 0;
+		order: 2;
+	}
+
+	&__profession {
+		display: flex;
+		align-items: flex-start; 
+		justify-content: flex-start;
+		flex: 1 1 0;
+		order: 3;
+		font-size: 18px;
+	}
+
+	&__message {
+		line-height: 25px;
+		margin-bottom: 38px;
+	}
+
+	&__next-message {
+		text-align: right;
+		margin-bottom: 100px;
+
+		& a {
+			text-decoration: none;
+			font-weight: 400;
+
+			& img {
+				width: 26px;
+				height: 3px;
+			}
+		}
+	}
+
+	.button {
+		margin: 0 auto;
+	}
+}
+
+@media screen and (max-width: 1024px) {
+	.testimonials {
+		&__inner {
+			width: 90%;
+		}
+	}
+}
+
+@media screen and (max-width: 767px) {
+	.testimonials {
+		&__table {
+			width: 100%;
+		}
+
+		&__person {
+			width: auto;
+			height: auto;
+
+			& *{
+				justify-content: center;
+			}
+		}
+
+		&__title {
+			@include is-centred;
+			margin-bottom: 30px;
+			font-size: 42px;
+		}
+
+		&__name {
+			padding-top: 30px;
+			font-size: 20px;
+		}
+	}
+}

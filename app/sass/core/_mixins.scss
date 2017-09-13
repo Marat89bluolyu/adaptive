@@ -1,0 +1,56 @@
+@mixin clearfix {
+  &:after {
+    content: "";
+    display: block;
+    clear: both;
+  }
+}
+
+/*position*/
+
+@mixin is-inline-block {
+	display: inline-block;
+}
+
+@mixin is-floated-none {
+	float: none;
+}
+
+@mixin is-floated-left {
+	float: left;
+}
+
+@mixin is-floated-right {
+	float: right;
+}
+
+@mixin is-centred {
+	text-align: center;
+	margin: 0 auto;
+}
+
+@mixin is-hidden {
+	display: none;
+}
+
+/*Colors*/
+
+@mixin yellow {
+	background: $color-yellow;
+}
+
+@mixin glass {
+    background-color: $effect-glass;
+}
+
+@mixin red {
+	background: $color-red;
+}
+
+@mixin pink {
+	background: $color-pink;
+}
+
+@mixin color-grey {
+	color: $color-grey;
+}

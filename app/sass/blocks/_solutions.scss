@@ -1,0 +1,101 @@
+.solutions {
+	&__inner {
+		display: flex;
+		justify-content: space-between;
+		flex-wrap: wrap;
+		width: 1090px;
+		margin: 0 auto;
+		padding: 70px 0 115px;
+	}
+
+	&__title {
+		@include is-centred;
+		width: 100%;
+		margin-bottom: 70px;
+	}
+
+	&__container {
+		position: relative;
+		width: 313px;
+		border-radius: 9px;
+		background: $color-yellow;
+	}
+
+	&__name {
+		@include is-centred;
+		padding: 40px 0 45px;
+		font-size: 36px;
+		font-weight: 400;
+		letter-spacing: 2.88px;
+	}
+
+	&__info {
+		position: relative;
+		width: 303px;
+		height: 252px;
+		margin: 0 auto;
+		background: $color-white;
+	}
+
+	&__list {
+		position: absolute;
+		left: 34px;
+		top: 21px;
+		list-style-position: inside;
+		list-style-image: url('../images/check.png');
+
+		& li{
+			font-size: 18px;
+			font-family: 'PT Sans';
+			padding-bottom: 8px;
+		}
+	}
+
+	&__price {
+		position: absolute;
+		left: 85px;
+		bottom: 15px;
+		font-family: 'pfagorasanspro-light';
+		font-size: 60px;
+	}
+
+	&__description {
+		@include is-centred;
+		font-size: 20px;
+		padding: 15px 0;
+	}
+
+	&__bestseller {
+		@include is-centred;
+		position: absolute;
+		top: -25px;
+		left: 65px;
+		width: 190px;
+		padding-top: 5px;
+		clip-path: polygon(15% 0, 85% 0, 100% 100%, 0% 100%);
+		-webkit-clip-path: polygon(15% 0, 85% 0, 100% 100%, 0% 100%);
+		background: $color-yellow;
+		font-size: 20px;
+		font-weight: 700;
+		letter-spacing: 0.9px;
+		text-transform: uppercase;
+		color: $color-red;
+	}
+}
+
+@media screen and (max-width: 1024px){
+	.solutions {
+		&__inner {
+			width: 90%;
+			justify-content: space-around;
+		}
+
+		&__container {
+			margin: 20px 0;
+			
+			&:nth-child(2) {
+				order: 1;
+			}
+		}
+	}
+}

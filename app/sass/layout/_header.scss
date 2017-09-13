@@ -1,0 +1,65 @@
+/*Header*/
+
+.header {
+	&__inner {
+		display: flex;
+		align-items: center;
+		width: $page-width;
+		margin: 0 auto;
+		padding: 21px 0;
+	}
+
+	&__menu {
+		background: none;
+		border: none;
+		cursor: pointer;
+	}
+
+	&__logo {
+		margin-left: 5.5%;
+	}
+
+	&__contacts {
+		@include yellow;
+		margin-left: auto;
+		width: 210px;
+		padding: 14px 0;
+		border-radius: 9px;
+		letter-spacing: 0.96px;     
+		text-align: center;
+		text-decoration: none;
+	}
+
+	&__login {
+		margin-left: 4.5%;
+	}
+}
+
+@media screen and (max-width: 1024px) {
+	.header {
+		&__inner {
+			width: 90%;
+			justify-content: space-between;
+		}
+
+		&__contacts {
+			flex-shrink: 0;
+		}
+	}
+}
+
+@media screen and (max-width: 767px) {
+	.header {
+		&__inner {
+			flex-wrap: wrap;
+		}
+
+		&__contacts {
+			order: -1;
+			width: 100%;
+			margin: auto;
+			font-size: 20px;
+			margin-bottom: 16px;
+		}
+	}
+}

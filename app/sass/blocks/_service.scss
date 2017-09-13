@@ -1,0 +1,73 @@
+/*service*/
+
+.service {
+	&__inner {
+		display: flex;
+		justify-content: space-between;
+		width: 950px;
+		margin: 53px auto 100px;
+		position: relative;
+
+		&::before {
+		position: absolute;
+		top: 60px;
+		content: "";
+		border-top: 3px #ffd200 dashed;
+		z-index: -1;
+		width: 100%;
+		}
+	}
+
+	&__image {
+		width: 135px;
+		height: 135px;
+		margin: auto;
+		padding: 36px;
+		background: #fff;
+	}
+
+	&__description {
+		@include is-centred;
+		margin-top: 28px;
+		font-size: 20px;
+		font-weight: 600;
+	}
+}
+
+@media screen and (max-width: 1024px) {
+	.service {
+		&__inner {
+			width: 79.166%;
+		}
+	}
+}
+
+@media screen and (max-width: 767px) {
+	.service {
+		&__inner {
+			flex-wrap: wrap;
+			align-items: center;
+			margin: 20px auto;
+
+			&::before {
+				border: none;
+			}
+		}
+
+		&__container {
+			width: 50%;
+			margin: 20px 0;
+		}
+
+		&__image {
+			width: 120px;
+			height: 120px;
+			padding: 30px;
+		}
+
+		&__description {
+			font-size: 14px;
+			margin-top: 20px;
+		}
+	}
+}
